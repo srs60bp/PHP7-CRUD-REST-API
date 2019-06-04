@@ -227,9 +227,7 @@ class Product{
         $query = "SELECT c.name as family_name, p.id, p.sku, p.barcode, p.name, p.price, p.unit, p.quantity , p.minquantity, p.createdAt, p.updatedAt FROM" . $this->table_name . " p LEFT JOIN Family c ON p.family_id = c.id ORDER BY p.createdAt DESC";
 
         $stmt = $this->connection->prepare($query);
-
         $stmt->execute();
-
         return $stmt;
     }
     //U
@@ -243,13 +241,13 @@ The PHP Transaction Class
 <?php
 class Transaction{
 
-    // Connection instance
+// Connection instance
     private $connection;
 
-    // table name
+// table name
     private $table_name = "Transaction";
 
-    // table columns
+// table columns
     public $id;
     public $comment;
     public $price;
@@ -355,8 +353,6 @@ $stmt = $product->read();
 $count = $stmt->rowCount();
 
 if($count > 0){
-
-
     $products = array();
     $products["body"] = array();
     $products["count"] = $count;
