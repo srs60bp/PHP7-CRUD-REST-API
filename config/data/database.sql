@@ -51,19 +51,3 @@ CREATE TABLE `Location` (
   `createdAt` datetime NOT NULL,
   `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
-
-    © 2019 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
-
