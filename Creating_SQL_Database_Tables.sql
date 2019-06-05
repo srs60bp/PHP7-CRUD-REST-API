@@ -1,3 +1,4 @@
+
 CREATE TABLE `Product` (
   `id` int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
   `sku` varchar(255),
